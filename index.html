@@ -15,20 +15,23 @@
     <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <a href="/" class="nav-link">Home</a>
+                <a href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link">About me</a>
+                <a href="#about" class="nav-link">About me</a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link">Portfolio</a>
+                <a href="#skills" class="nav-link">Skills</a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link">Contact</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
             </li>
         </ul>
     </nav>
-    <header class="header">
+    <header id="home" class="header">
         <div class="big-name">
             <p class="big-name-complements">Hey! I'm</p>
             <h1>MARC<span class="big-name-comma">,</span></h1>
@@ -37,9 +40,9 @@
         
     </header>
 
-    <section class="header">
+    <section id="about" class="header">
         <div class="row about-section">
-            <div class="col-7">
+            <div class="col-7 about-left-side">
                 <h3>About me</h3>
                 <p class="about-text">I am Marc, a reliable, hard-working and self-motivated developer. If I had to describe myself in one word, I would say I am constant, because when I have a goal I try until I achieve it. I am also very adaptable, and I am able to work well under pressure and strict deadlines.</p>
             </div>
@@ -47,20 +50,33 @@
         </div>
     </section>
 
-    <section class="header">
+    <section id="skills" class="header">
         <h2>Skills</h2>
         <div class="cards">
-            <div class="card">
+            <div class="card skill">
                 <img class="card-img-top" src="frontend.png" alt="Skill image">
             </div>
-            <div class="card">
+            <div class="card skill">
                 <img class="card-img-top" src="nodejs-logo.svg" alt="Skill image">
             </div>
-            <div class="card">
+            <div class="card skill">
                 <img class="card-img" src="FOREST.png" alt="Skill image">
             </div>
-            <div class="card">
+            <div class="card skill">
                 <img class="card-img" src="gitlogo.png" alt="Skill image">
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="header">
+        <h2>Portfolio</h2>
+        <div class="card">
+            <img src="" alt="" class="card-img-top project-image">
+            <div class="card-body">
+                <h5 class="card-title project-title">To-Do List</h5>
+                <p class="card-text project-description">Lorem ipsum dolor sit, amet consectetur adipisici</p>
+                <button class="btn btn-primary">Open</button>
+                <button class="btn btn-primary">Open</button>
             </div>
         </div>
     </section>

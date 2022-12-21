@@ -48,7 +48,7 @@ h2 {
     font-family: 'Inter', sans-serif;
     width: 60%;
     text-align: left;
-    margin: 0 auto 30px;
+    margin: 0 auto 50px;
     padding-left: 10px;
 }
 
@@ -65,18 +65,28 @@ h3 {
     /* align-items: center; */
     background-color: #1b2431;
     border-radius: 25px;
-    padding: 2rem;
+    padding: 2rem 0 2rem 2rem;
+}
+
+.about-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .about-text {
     color: white;
     text-align: justify;
     margin: 0;
+    display: inline-block;
+    align-self: center;
     padding: 0;
 }
 
 .about-img {
     margin-top: -30px;
+    height: 286px;
+    object-fit: contain;
 }
 
 /* //////////////////////////////// */
@@ -92,7 +102,7 @@ h3 {
     flex-wrap: wrap;
 }
 
-.card {
+.skill {
     width: 15rem;
     height: 130px;
     display: flex;
@@ -103,7 +113,7 @@ h3 {
     background-color: white;
 }
 
-.card img {
+.skill img {
     width: 10rem;
     height: 120px;
     object-fit: contain;
