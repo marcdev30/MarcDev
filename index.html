@@ -33,9 +33,9 @@
     </nav>
     <header id="home" class="header">
         <div class="big-name">
-            <p class="big-name-complements">Hey! I'm</p>
+            <p class="big-name-firstc">Hey! I'm</p>
             <h1>MARC<span class="big-name-comma">,</span></h1>
-            <p class="big-name-complements">a Web Developer</p>
+            <p class="big-name-secondc">a Web Developer</p>
         </div>
         
     </header>
@@ -70,16 +70,78 @@
 
     <section id="portfolio" class="header">
         <h2>Portfolio</h2>
-        <div class="card">
-            <img src="" alt="" class="card-img-top project-image">
-            <div class="card-body">
-                <h5 class="card-title project-title">To-Do List</h5>
-                <p class="card-text project-description">Lorem ipsum dolor sit, amet consectetur adipisici</p>
-                <button class="btn btn-primary">Open</button>
-                <button class="btn btn-primary">Open</button>
+        <div class="cards">
+            <div class="card project-card">
+                <img src="Project1.png" alt="" class="card-img-top project-img">
+                <div class="card-body">
+                    <h5 class="card-title project-title">To-Do List</h5>
+                    <p class="card-text project-description">A to-do list app with the possibility to create custom lists.</p>
+                    <a class="btn btn-primary" href="https://todo-list-uuzr.onrender.com" target="_blank">Live website</a>
+                    <a class="btn btn-primary" href="https://secrets-jq0h.onrender.com" target="_blank">Source code</a>
+                </div>
+            </div>
+            <div class="card project-card">
+                <img src="Project2.png" alt="" class="card-img-top project-img">
+                <div class="card-body">
+                    <h5 class="card-title project-title">Daily Journal</h5>
+                    <p class="card-text project-description">A blog app with local authentication and "read more" pages.</p>
+                    <a class="btn btn-primary" href="https://blog-nb56.onrender.com" target="_blank">Live website</a>
+                    <a class="btn btn-primary" href="https://secrets-jq0h.onrender.com" target="_blank">Source code</a>
+                </div>
+            </div>
+            <div class="card project-card">
+                <img src="Project3.png" alt="" class="card-img-top project-img">
+                <div class="card-body">
+                    <h5 class="card-title project-title">Secrets</h5>
+                    <p class="card-text project-description">A simple app with the most secure levels of authentication and oAuth2.0 to implement social login.</p>
+                    <a class="btn btn-primary" href="https://secrets-jq0h.onrender.com" target="_blank">Live website</a>
+                    <a class="btn btn-primary" href="https://secrets-jq0h.onrender.com" target="_blank">Source code</a>
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="contact" class="header">
+        <div class="row about-section">
+            <div class="about-left-side">
+                <h3>Contact Me</h3>
+                <form action="/contact" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" id="name" name="name" autocomplete="off" spellcheck="false">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Email</label>
+                        <input class="form-control" type="email" id="email" name="email" autocomplete="off" spellcheck="false">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" spellcheck="false"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary form-control" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+            <!-- <img class="contact-img col-5" src="download.svg" alt="About me personal image"> -->
+        </div>
+    </section>
+
+    <footer>
+        <h4>Marc</h4>
+        <div class="footer-links">
+            <a href="#home" class="footer-link">Home</a>
+            <a href="#about" class="footer-link">About</a>
+            <a href="#skills" class="footer-link">Skills</a>
+            <a href="#portfolio" class="footer-link">Portfolio</a>
+            <a href="#contact" class="footer-link">Contact</a>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2023 Marc. All rights reserved.</p>
+    </footer>
 
     <script src="index.js"></script>
 </body>

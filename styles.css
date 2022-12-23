@@ -13,7 +13,11 @@
 
 .header {
     background-color: #34455F;
-    height: 500px;
+    /* height: 500px; */
+    /* padding-top: 100px; */
+}
+
+#home {
     padding-top: 100px;
 }
 
@@ -24,8 +28,13 @@
     margin: 0 auto;
 }
 
-.big-name-complements {
+.big-name-firstc {
     font-size: 41px;
+}
+
+.big-name-secondc {
+    font-size: 41px;
+    margin: 0;
 }
 
 h1 {
@@ -40,6 +49,10 @@ h1 {
 }
 
 /* //////////////////////////////// */
+
+#about {
+    padding-top: 200px;
+}
 
 h2 {
     text-transform: uppercase;
@@ -65,7 +78,7 @@ h3 {
     /* align-items: center; */
     background-color: #1b2431;
     border-radius: 25px;
-    padding: 2rem 0 2rem 2rem;
+    padding: 3rem 0 2rem 2rem;
 }
 
 .about-left-side {
@@ -90,6 +103,10 @@ h3 {
 }
 
 /* //////////////////////////////// */
+
+#skills {
+    padding-top: 150px;
+}
 
 .cards {
     display: flex;
@@ -118,4 +135,91 @@ h3 {
     height: 120px;
     object-fit: contain;
     /* margin: 20px auto; */
+}
+
+/* //////////////////////////////// */
+
+#portfolio {
+    padding-top: 150px;
+}
+
+.project-card {
+    width: 15rem;
+}
+
+.project-img {
+    padding: 16px;
+}
+
+/* //////////////////////////////// */
+
+#contact {
+    padding: 150px 0 150px;
+}
+
+#contact label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+#contact button {
+    margin-top: 10px;
+}
+
+#contact .about-section {
+    align-items: center;
+    padding-right: 32px;
+}
+
+.contact-img {
+    margin-top: -30px;
+    height: 286px;
+    object-fit: contain;
+}
+
+/* //////////////////////////////// */
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 5% 30px;
+}
+
+footer h4 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+footer hr {
+    width: 100%;
+    opacity: 1;
+    margin: 50px auto 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.copyright {
+    font-size: 0.875rem;
 }
