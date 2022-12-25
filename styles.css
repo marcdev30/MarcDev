@@ -1,6 +1,14 @@
 .navbar {
-    height: 75px;
+    min-height: 75px;
     background-color: #607EAA;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.header {
+    margin-bottom: -2px;
 }
 
 .nav-link {
@@ -11,6 +19,23 @@
     margin: 0 45px;
 }
 
+.navbar-toggler {
+    margin-left: 20px;
+    position: absolute;
+    top: 17px;
+    /* margin-top: 17px;
+    margin-bottom: 17px; */
+}
+
+.show {
+    /* background-color: red; */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
 .header {
     background-color: #34455F;
     /* height: 500px; */
@@ -18,7 +43,7 @@
 }
 
 #home {
-    padding-top: 100px;
+    padding-top: 175px;
 }
 
 .big-name {
@@ -117,6 +142,7 @@ h3 {
     row-gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
+    /* margin-bottom: 50px; */
 }
 
 .skill {
@@ -145,10 +171,18 @@ h3 {
 
 .project-card {
     width: 15rem;
+    height: 100%;
 }
 
 .project-img {
     padding: 16px;
+    height: 200px;
+    object-fit: contain;
+    width: auto;
+}
+
+.live {
+    margin-bottom: 10px;
 }
 
 /* //////////////////////////////// */
@@ -222,4 +256,63 @@ footer hr {
 
 .copyright {
     font-size: 0.875rem;
+}
+
+body {
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(196, 196, 196);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(130, 130, 130);
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        padding: 59px 0 20px;
+    }
+}
+
+
+@media (max-width: 840px) {
+    .big-name-firstc, .big-name-secondc {
+        font-size: 5vw;
+    }
+
+    .big-name h1 {
+        font-size: 24vw;
+        margin: -2rem 0 -1rem -0.5rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 35px;
+        padding-right: 2rem;
+        width: 80%;
+    }
+
+    h2 {
+        width: 80%;
+    }
+
+    .cards {
+        width: 80%;
+    }
+
 }
