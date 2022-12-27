@@ -1,3 +1,4 @@
+require("dotenv").config();
 const nodeMail = require("nodemailer");
 exports.mainMail = async function (name, email, message) {
 	const transporter = nodeMail.createTransport({
