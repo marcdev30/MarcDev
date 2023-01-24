@@ -8,7 +8,7 @@ navLinks.forEach((link) => {
 
 const tataOptions = {
 	position: "br",
-	duration: 8000,
+	duration: 80000,
 	closeBtn: false,
 	animate: "slide",
 };
