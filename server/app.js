@@ -9,9 +9,9 @@ const app = express();
 const PORT = process.env.PORT || 4747;
 
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "..", "client", "build"));
+app.set("views", path.join(__dirname, "..", "client", "frontend-files"));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "..", "client", "build")));
+app.use(express.static(path.join(__dirname, "..", "client", "frontend-files")));
 
 app.get("/", function (req, res) {
 	res.render("home");
